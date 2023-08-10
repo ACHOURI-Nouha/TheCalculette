@@ -1,0 +1,75 @@
+* { 
+    padding: 0; 
+    margin: 0; 
+    box-sizing: border-box; 
+}
+
+body {
+    max-width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+}
+
+.calculette {
+    background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 5px #fed6c9;
+}
+
+.ecran {
+    width: 100%;
+    height: 100px;
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    margin-bottom: 10px;
+    margin-top: 5px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    padding: 5px;
+    font-size: 25px;
+}
+
+.touches {
+    display: grid;
+    grid-template-columns: repeat(4, 45px);
+    grid-template-rows: repeat(5, 40px);
+    grid-gap: 5px;
+}
+
+button {
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    background-image: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%);
+    box-shadow: 0 3px #b1f4cf;
+    font-size: 15px;
+}
+
+button:active{
+    box-shadow: 0 1px #b1f4cf;
+    transform: translateY(2px);
+}
+
+button[data-key="8"]{
+    background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
+    box-shadow: 0 3px #fa97ab;
+    font-weight: bold;
+    color: white;
+}
+
+button[data-key="13"]{
+    grid-column: span 2;
+    background-image: linear-gradient(to top, #4fb576 0%, #44c489 30%, #28a9ae 46%, #28a2b7 59%, #4c7788 71%, #6c4f63 86%, #432c39 100%);
+    box-shadow: 0 3px #a5f7ca;
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+}
